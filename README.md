@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./public/logo.png" />
+</p>
+
 # Overview
 This is the source code for the ElaProjeta architecture studio website, built using HTML, CSS, and JavaScript. 
 
