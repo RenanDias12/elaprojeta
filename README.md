@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Overview
+This is the source code for the ElaProjeta architecture studio website, built using HTML, CSS, and JavaScript. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The website showcases the studio's services, projects, and team, providing a platform for potential clients to learn more about the studio and get in touch.
 
-Currently, two official plugins are available:
+# Features
+- Responsive design for optimal viewing on desktop, tablet, and mobile devices
+Navigation menu with links to about, services, projects, and contact pages
+- Hero section with animated typing effect and call-to-action button
+- About section with team description and image
+- Services section (currently under development)
+- Projects section (currently under development)
+- Contact section (currently under development)
+- Footer with copyright information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Structure
+### The website is organized into the following directories and files:
 
-## Expanding the ESLint configuration
+`index.html:` The main HTML file for the website.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+`style.css:` The CSS file for styling the website.
 
-- Configure the top-level `parserOptions` property like this:
+`scripts.js:` The JavaScript file for adding interactivity to the website.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+`media:` Directory containing images and other media files used on the website.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+`public:` Directory containing the website's favicon and other public assets
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Installation
+To run the website locally, follow these steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Clone the repository to your local machine using git clone.
+- Open the index.html file in a web browser to view the website.
+
+# License
+This website is licensed under the GNU License.
+
+# Contact
+For any questions or feedback, please open a issue or contact me at my [linkedIn](https://www.linkedin.com/in/renandfaria/) .
