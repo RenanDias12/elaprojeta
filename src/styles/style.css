@@ -90,7 +90,9 @@ nav {
     background-position: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #fff;
     position: relative;
 }
 
@@ -105,15 +107,20 @@ nav {
 }
 
 .hero-content {
-    display: flex;
-    padding: 5rem 5%;
-    font-size: 5vw;
-    background-color: #ffffff7e;
-    color: #1c5349;
-    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
-    /* justify-items: flex-start; */
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .about {
