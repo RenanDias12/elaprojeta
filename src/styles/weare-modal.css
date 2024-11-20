@@ -1,0 +1,89 @@
+.modal {
+    display: none;
+    /* Esconde a modal por padrão */
+    position: fixed;
+    /* Posiciona a modal fixamente na tela */
+    z-index: 1;
+    /* Garante que a modal fique acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Permite rolar o conteúdo da modal se necessário */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fundo escurecido */
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.modal-container {
+    background-color: #fefefe;
+    margin: 2% 10% 2% 10%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    align-self: center;
+}
+
+.modal-content {
+    /* padding: 8px; */
+    padding: 5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    overflow-y: auto;
+    gap: 10%
+}
+
+.close {
+    background-color: #ffffff;
+    color: #1c5349;
+    border: none;
+    padding: 4px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0px 4px 0px 4px;
+    float: right;
+}
+
+.next,
+.prev {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1c5349;
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0px 4px 0px 4px;
+}
+
+.close:hover,
+.next:hover,
+.prev:hover {
+    background-color: #1c5349;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+    }
+}

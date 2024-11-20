@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
+
+header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    padding-top: 12px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #1c5349;
+    font-size: 1rem;
+    text-decoration: none;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    background-image: linear-gradient(180deg, transparent 75%, #1c5349 0);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: background-size .5s ease;
+    transition: background-size .5s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #1c5349;
+    outline: 0 !important;
+    background-size: 100% 100%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: transparent;
+    border: 1px solid #1c5349;
+    color: #1c5349;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1c5349;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('../media/sala.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/*TODO: agrupar classes iguais */
+.projects,
+.about {
+    padding: 5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1c5349;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.services,
+.contact {
+    padding: 5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.projects h2,
+.contact h2,
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1c5349;
+}
+
+.services-image {
+    flex: 1;
+}
+
+.services-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1c5349;
+    color: #ffffff;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content,
+    .about-image {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
