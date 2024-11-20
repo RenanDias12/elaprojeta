@@ -123,6 +123,8 @@ nav {
     margin-bottom: 2rem;
 }
 
+/*TODO: agrupar classes iguais */
+.projects,
 .about {
     padding: 5rem 5%;
     display: flex;
@@ -151,7 +153,8 @@ nav {
     border-radius: 5px;
 }
 
-.services {
+.services,
+.contact {
     padding: 5rem 5%;
     display: flex;
     justify-content: space-between;
@@ -163,6 +166,8 @@ nav {
     padding-left: 2rem;
 }
 
+.projects h2,
+.contact h2,
 .services h2 {
     font-size: 2rem;
     margin-bottom: 1rem;

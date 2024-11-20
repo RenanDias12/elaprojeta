@@ -7,7 +7,7 @@
     <title>ElaProjeta</title>
     <link rel="shortcut icon" type="imagex/png" href="../public/logoCircle.ico">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/weare-modal.css">
 </head>
 
 <body>
@@ -42,28 +42,24 @@
                 <p>We are a team of passionate architects and designers dedicated to creating exceptional spaces that
                     inspire and enhance life. With years of experience and a commitment to innovation, we transform
                     ideas into reality.</p>
-                <button id="cta-button" class="cta-button">Saiba mais</button>
+                <button id="weare-button" class="cta-button">Saiba mais</button>
             </div>
             <div class="about-image">
                 <img src="./media/cards.jpg" alt="Architecture studio workspace">
             </div>
-            <div id="myModal" class="modal">
+            <div id="weare-modal" class="modal">
                 <div class="modal-container">
-                    <span class="close">&times;</span>
-                    <div class="modal-content">
-                        <div class="about-content">
+                    <button class="close">&times;</button>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                    <div id="weare-content" class="modal-content">
+                        <div class="modal-description">
                             <h2>Jannyfer Souza</h2>
                             <p>E uma profissional renomada no campo da arquitetura,
                                 com uma paixão inigualável por criar espaços que inspiram
                                 e transformam vidas. Sua abordagem única combina a estética
                                 contemporânea com a funcionalidade, resultando em projetos
-                                elegantes e atemporais. Com anos de experiência e um portfólio
-                                diversificado, Jannyfer é reconhecida por sua capacidade de
-                                transformar ideias em realidade, sempre com um toque pessoal
-                                e atencioso às necessidades de cada cliente. Seus projetos são
-                                caracterizados por linhas clean, materiais de alta qualidade e
-                                uma iluminação impecável, criando ambientes que proporcionam
-                                bem-estar e conforto.
+                                elegantes e atemporais.
                             </p>
                             <p>
                                 Acreditando que a arquitetura é uma arte capaz de transformar
@@ -74,10 +70,11 @@
                                 as expectativas.
                             </p>
                         </div>
-                        <div class="about-image">
-                            <img src="./media/janny2.png" alt="Architecture studio workspace">
+                        <div class="modal-image">
+                            <img src="./media/janny.png" alt="Architecture studio workspace" />
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -92,13 +89,48 @@
                 <p>We create projects and design all types of rooms inproving elegance and confort.</p>
             </div>
         </section>
+
+        <section id="projects" class="projects">
+            <div class="services-content">
+                <h2>Nossos Projetos</h2>
+                <p>We create projects and design all types of rooms inproving elegance and confort.</p>
+            </div>
+            <div class="services-image">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80"
+                    alt="profile">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="services-image">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80"
+                    alt="profile">
+            </div>
+            <div class="services-content">
+                <h2>Contato</h2>
+                <p>We create projects and design all types of rooms inproving elegance and confort.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 ElaProjeta Studio. Todos os direitos reservados.</p>
+        <h2>Nossas redes sociais</h2>
+        <div>
+            <a href="https://www.instagram.com/studioelaprojeta/">
+                <img src="./media/icons8-instagram.svg" alt="instagram">
+            </a>
+            <a href="">
+                <img src="./media/icons8-tiktok.svg" alt="tiktok">
+            </a>
+            <a href="">
+                <img src="./media/icons8-linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+        <p>&copy; 2024 Studio ElaProjeta. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/weare-modal.js"></script>
 </body>
 
 </html>
