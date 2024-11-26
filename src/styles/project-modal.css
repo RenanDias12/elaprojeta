@@ -1,4 +1,4 @@
-.modal {
+.project-modal {
     display: none;
     /* Esconde a modal por padrão */
     position: fixed;
@@ -18,7 +18,7 @@
     animation-fill-mode: forwards;
 }
 
-.modal-container {
+.project-container {
     background-color: #fefefe;
     margin: 2% 10% 2% 10%;
     padding: 20px;
@@ -28,7 +28,7 @@
     align-self: center;
 }
 
-.modal-content {
+.project-content {
     /* padding: 8px; */
     padding: 5rem 5%;
     display: flex;
@@ -39,7 +39,7 @@
     gap: 10%
 }
 
-.close {
+.project-close-button {
     background-color: #ffffff;
     color: #1c5349;
     border: none;
@@ -51,8 +51,8 @@
     float: right;
 }
 
-.next,
-.prev {
+.project-next-button,
+.project-prev-button {
     display: inline-block;
     background-color: #ffffff;
     color: #1c5349;
@@ -64,9 +64,9 @@
     margin: 0px 4px 0px 4px;
 }
 
-.close:hover,
-.next:hover,
-.prev:hover {
+.project-close-button:hover,
+.project-next-button:hover,
+.project-prev-button:hover {
     background-color: #1c5349;
     color: #ffffff;
     cursor: pointer;
@@ -83,7 +83,7 @@
 }
 
 @media (max-width: 768px) {
-    .modal-content {
+    .project-content {
         flex-direction: column;
     }
 }

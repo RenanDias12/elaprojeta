@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="imagex/png" href="../public/logoCircle.ico">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/weare-modal.css">
+    <link rel="stylesheet" href="./styles/project-modal.css">
 </head>
 
 <body>
@@ -113,11 +114,41 @@
             <div class="services-content">
                 <h2>Nossos Projetos</h2>
                 <p>We create projects and design all types of rooms inproving elegance and confort.</p>
-                <button id="weare-button" class="cta-button">Veja mais</button>
+                <button id="project-button" class="cta-button">Veja mais</button>
             </div>
             <div class="services-image">
                 <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80"
                     alt="profile">
+            </div>
+            <div id="project-modal" class="project-modal">
+                <div class="project-container">
+                    <button class="project-close-button">&times;</button>
+                    <button class="project-prev-button">&#10094;</button>
+                    <button class="project-next-button">&#10095;</button>
+                    <div id="project-content" class="project-content">
+                        <div class="project-description">
+                            <h2>Jannyfer Souza</h2>
+                            <p>E uma profissional renomada no campo da arquitetura,
+                                com uma paixão inigualável por criar espaços que inspiram
+                                e transformam vidas. Sua abordagem única combina a estética
+                                contemporânea com a funcionalidade, resultando em projetos
+                                elegantes e atemporais.
+                            </p>
+                            <p>
+                                Acreditando que a arquitetura é uma arte capaz de transformar
+                                vidas, Jannyfer busca criar espaços que reflitam a personalidade
+                                e o estilo de vida de seus clientes. Através de um diálogo
+                                constante e transparente, ela busca entender as necessidades e
+                                os desejos de cada projeto, garantindo resultados que superam
+                                as expectativas.
+                            </p>
+                        </div>
+                        <div class="project-image">
+                            <img src="./media/janny.png" alt="Architecture studio workspace" />
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -151,6 +182,7 @@
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/weare-modal.js"></script>
+    <script src="./scripts/project-modal.js"></script>
 </body>
 
 </html>
