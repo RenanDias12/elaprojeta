@@ -10,12 +10,12 @@ The website showcases the studio's services, projects, and team, providing a pla
 # Features
 - Responsive design for optimal viewing on desktop, tablet, and mobile devices
 Navigation menu with links to about, services, projects, and contact pages
-- Hero section with animated typing effect and call-to-action button
+- Hero section beatiful project image in background
 - About section with team description and image
-- Services section (currently under development)
-- Projects section (currently under development)
-- Contact section (currently under development)
-- Footer with copyright information
+- Services section with services description
+- Projects section with a modal to show projects and its description
+- Contact section to show how to get in touch
+- Footer with copyright information and links to social media
 
 # Structure
 ### The website is organized into the following directories and files:
@@ -24,11 +24,11 @@ Navigation menu with links to about, services, projects, and contact pages
 
 `style.css:` The CSS file for styling the website.
 
-`scripts.js:` The JavaScript file for adding interactivity to the website.
+`script.js:` The JavaScript file for adding interactivity to the website.
 
 `media:` Directory containing images and other media files used on the website.
 
-`public:` Directory containing the website's favicon and other public assets
+`public:` Directory containing the website's favicon and other assets
 
 # Installation
 To run the website locally, follow these steps:

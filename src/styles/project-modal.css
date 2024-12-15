@@ -1,4 +1,4 @@
-.modal {
+.project-modal {
     display: none;
     /* Esconde a modal por padrão */
     position: fixed;
@@ -18,9 +18,9 @@
     animation-fill-mode: forwards;
 }
 
-.modal-container {
+.project-container {
     background-color: #fefefe;
-    margin: 2% 10% 2% 10%;
+    margin: 2% 5% 2% 5%;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -28,18 +28,17 @@
     align-self: center;
 }
 
-.modal-content {
-    /* padding: 8px; */
-    padding: 5rem 5%;
+.project-content {
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90%;
     overflow-y: auto;
-    gap: 10%
+    gap: 3%
 }
 
-.close {
+.project-close-button {
     background-color: #ffffff;
     color: #1c5349;
     border: none;
@@ -51,8 +50,23 @@
     float: right;
 }
 
-.next,
-.prev {
+.project-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.project-next-button,
+.project-prev-button {
     display: inline-block;
     background-color: #ffffff;
     color: #1c5349;
@@ -64,9 +78,9 @@
     margin: 0px 4px 0px 4px;
 }
 
-.close:hover,
-.next:hover,
-.prev:hover {
+.project-close-button:hover,
+.project-next-button:hover,
+.project-prev-button:hover {
     background-color: #1c5349;
     color: #ffffff;
     cursor: pointer;
@@ -83,7 +97,7 @@
 }
 
 @media (max-width: 768px) {
-    .modal-content {
+    .project-content {
         flex-direction: column;
     }
 }
