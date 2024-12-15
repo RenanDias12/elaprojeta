@@ -22,28 +22,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const nextBtn = document.querySelector('.project-next-button');
     const content = document.getElementById('project-content');
 
-    const JannyContent = `<div class="project-description">
-        <h2>Jannyfer Souza</h2>
-        <p>E uma profissional renomada no campo da arquitetura,
-            com uma paixão inigualável por criar espaços que inspiram
-            e transformam vidas. Sua abordagem única combina a estética
-            contemporânea com a funcionalidade, resultando em projetos
-            elegantes e atemporais.
-        </p>
-        <p>
-            Acreditando que a arquitetura é uma arte capaz de transformar
-            vidas, Jannyfer busca criar espaços que reflitam a personalidade
-            e o estilo de vida de seus clientes. Através de um diálogo
-            constante e transparente, ela busca entender as necessidades e
-            os desejos de cada projeto, garantindo resultados que superam
-            as expectativas.
-        </p>
+    const project1 = `<div class="project-description">
+        <h2>Casa Beira Lago</h2>
+        <p>Uma casa aconchegante com o frescor e a bela paisagem de um lago.</p>
     </div>
     <div class="project-image">
-        <img src="./media/janny.png" alt="Architecture studio workspace" />
+        <img src="./media/project1.jpg" alt="Casa beira lago" />
     </div>`
 
-    const contentList = [JannyContent];
+    const project2 = `<div class="project-description">
+        <h2>Sala com desing moderno</h2>
+        <p>Um desing de interiores feito para uma sala fornecendo um ambiente agradavel.</p>
+    </div>
+    <div class="project-image">
+        <img src="./media/project2.jpg" alt="Casa beira lago" />
+    </div>`
+
+    const contentList = [project1, project2];
     let currentPage = 0;
     const totalPages = contentList.length - 1;
     prevBtn.addEventListener('click', () => {

@@ -20,7 +20,7 @@
 
 .project-container {
     background-color: #fefefe;
-    margin: 2% 10% 2% 10%;
+    margin: 2% 5% 2% 5%;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -29,14 +29,13 @@
 }
 
 .project-content {
-    /* padding: 8px; */
-    padding: 5rem 5%;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90%;
     overflow-y: auto;
-    gap: 10%
+    gap: 3%
 }
 
 .project-close-button {
@@ -49,6 +48,21 @@
     border-radius: 4px;
     margin: 0px 4px 0px 4px;
     float: right;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .project-next-button,
